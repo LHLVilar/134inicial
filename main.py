@@ -19,7 +19,7 @@ def multiplicar(numero_a, numero_b):
     return numero_a * numero_b
 
 if __name__ == '__main__':
-    imprimir_oi('Luiz')
+    imprimir_oi('alarme')
     resultado = somar(5, 7)
     print(f'A soma é {resultado}')
 
