@@ -1,0 +1,18 @@
+{
+  "id": 2958522,
+  "category": {
+    "id": 1,
+    "name": "cachorro"
+  },
+  "name": "Nina",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "vacinado"
+    }
+  ],
+  "status": "available"
+}
