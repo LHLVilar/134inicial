@@ -1,5 +1,6 @@
 import parametrize as parametrize
 import pytest
+import csv
 
 from main import somar, dividir, subtrair, multiplicar
 
@@ -62,6 +63,11 @@ def testar_subtrair():
     resultado_esperado = 5
     resultado_obtido = subtrair(numero_a, numero_b)
     assert resultado_obtido == resultado_esperado
+
+@pytest.mark.parametrize('numero_a, numero_b, resultado_esperado', ler_csv('C:\\Users\\lhvil\\PycharmProjects\\134inicial\\vendors\\csv\\massa_teste_subtrair_positivo.csv'))
+def teste_subtrair_leitura_csv(numero_a, numero_b, resultado_esperado):
+    resultado_obtido = subtrair(int(numero_a), int(numero_b))
+    assert resultado_obtido == int(resultado_esperado)
 
 def testar_multiplicar():
     numero_a = 10
